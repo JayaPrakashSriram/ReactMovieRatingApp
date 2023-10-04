@@ -1,0 +1,53 @@
+.movie-continer{
+   height: min-content;
+}
+
+.reduce-focuse-outline:focus{
+   outline: none;
+}
+
+.moviePoster{
+   height:650px;
+   width:100%;
+   object-fit:cover;
+}
+   
+.wrap{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+   padding:0px 20px 0px 20px; 
+}
+   
+.movieName{
+   font-size:24px;
+   margin:0;
+}
+   
+.movieRating{
+     font-size:20px;
+     font-weight: 500;
+}
+   
+.movieSummary{
+     margin:0px 20px 20px 20px;
+}
+
+.movieMap{
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+  gap:16px;
+  justify-content: center;
+}
+
+.entStr{
+  height:95vh;
+}
+
+.movieForm{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+  max-width:500px; 
+  margin:10px auto;
+}
