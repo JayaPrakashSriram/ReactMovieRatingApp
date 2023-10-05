@@ -25,6 +25,8 @@ export default function D13App(){
 
   useEffect(() => getMovies(), []);
 
+
+  
   const deleteMovie = async (id) => {                                        // new - deleteMovie function variable - D12
     console.log("Deleting movie...", id)
     await fetch(`${API}/movies/${id}`,{
@@ -81,7 +83,7 @@ function D13B({movie, id, deleteButton}){
               className="reduce-focuse-outline" 
               color="primary" 
               aria-label="Movie Details"
-              onClick={()=> navigate(`${API}/movies/${id}`)}
+              onClick={()=> navigate(`/movies/${id}`)}
             >
               <InfoIcon/>
             </IconButton>

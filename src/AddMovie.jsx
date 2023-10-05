@@ -55,7 +55,7 @@ const addMovie = async(newMovie) => {
       "Content-Type": "application/json",
     },
   });
-  navigate('/movie-rating-app');
+  navigate('/movies');
 };
 
   return (
