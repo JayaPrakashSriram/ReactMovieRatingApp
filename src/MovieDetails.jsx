@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
-import KeyboardBackspaceIcon from '@mui/icons-material/keyboardBackspace'; // initial code
+// import KeyboardBackspaceIcon from '@mui/icons-material/keyboardBackspace'; // initial code
 // import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace'; //again from MUI
 // import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace"; //karthi
 import { useEffect, useState } from "react";
@@ -44,8 +44,9 @@ export function MovieDetails() {
           <p style={Rating} className="movieRating">✨{movie.rating}</p>
         </div>
         <p className="movieSummary">{movie.summary}</p>
-        <Button startIcon={<KeyboardBackspaceIcon />} variant='contained' onClick={() => Navigate(-1)}>Back</Button>
+        <Button  variant='contained' onClick={() => Navigate(-1)}>Back</Button>
       </div>
     </div>
   );
 }
+// startIcon={<KeyboardBackspaceIcon />}
